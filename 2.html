@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绝对布局</title>
+    <style media="screen">
+        html * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .layout {
+            margin-top: 20px;
+        }
+
+        .layout article div {
+            min-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <!--绝对布局-->
+    <section class="layout absolute">
+        <style>
+            .layout.absolute .left-center-right div{
+                position: absolute;
+            }
+            .layout.absolute .left{
+                left: 0;
+                width: 300px;
+                background-color: red;
+            }
+            .layout.absolute .center{
+                left: 300px;
+                right: 300px;
+                background-color: blue;
+            }
+            .layout.absolute .right{
+                right: 0;
+                width: 300px;
+                background-color: red;
+            }
+        </style>
+        <article class="left-center-right">
+            <div class="left"></div>
+            <div class="center">
+                <h1>绝对定位解决方案</h1>
+                1.这是三栏布局的中间部分
+                2.这是三栏布局的中间部分
+                3.这是三栏布局的中间部分
+                4.这是三栏布局的中间部分
+                5.这是三栏布局的中间部分
+                6.这是三栏布局的中间部分
+            </div>
+            <div class="right"></div>
+        </article>
+    </section>
+
+</body>
+</html>
