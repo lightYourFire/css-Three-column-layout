@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>上下固定，中间自适应</title>
+    <style>
+        html,body{height:100%;}
+        body {
+            margin:0;
+            overflow:hidden;
+            _padding:100px 0;
+            box-sizing: border-box;
+            overflow:hidden;
+        }
+        #dHead {
+            height:100px;
+            line-height:100px;
+            background:#690;
+            width:100%;
+            position:absolute;
+            z-index:5;
+            top:0;
+            text-align:center;
+        }
+        #dBody {
+            background:#FC0;
+            width:100%;
+            position:absolute;
+            z-index:100;
+            top:100px;
+            bottom:100px;
+            overflow:auto;
+            _position:relative;
+            _top:0;
+            _bottom:0;
+            _height:100%;
+            _overflow:auto
+        }
+        .mycontent {
+            padding:20px;
+        }
+        #dFoot {
+            height:100px;
+            line-height:100px;
+            background:#690;
+            width:100%;
+            position:absolute;
+            z-index:200;
+            bottom:0;
+            text-align:center;
+        }
+        </style>
+        </head>
+        
+        <body>
+        <div id="dHead">固定头部100px;</div>
+        <div id="dBody">
+          <div class="mycontent"> 中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分<br>
+            中间自适应部分-----------------------------------<br>
+          </div>
+        </div>
+        <div id="dFoot">固定尾部100px</div>
+        </body>
+</html>
