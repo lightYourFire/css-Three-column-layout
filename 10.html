@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>absolute 水平垂直居中(在知道子元素宽度高度的时候)</title>
+  <style>
+    .father {
+      width: 400px;
+      height: 400px;
+      background-color: #eeeeee;
+      border: 1px solid #000;
+      margin: 100px auto;
+      position: relative;
+    }
+
+    .son {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100px;
+      height: 100px;
+      margin-top: -50px;
+      margin-left: -50px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="father">
+    <img src="http://blog.jgchen.xin/avatar/1540732248690.jpg" alt="sun" class="son" width="100">
+  </div>
+</body>
+
+</html>
